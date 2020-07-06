@@ -80,7 +80,7 @@ namespace ArtNet.Packets
         public override void WriteData(ArtNetBinaryWriter data)
         {
             base.WriteData(data);
-
+            
             data.Write(Sequence);
             data.Write(Physical);
             data.Write(Universe);
